@@ -73,8 +73,11 @@ public class Main {
         String taskText = input2.nextLine();
         System.out.println("What is the description of the task? ");
         String taskDescription = input2.nextLine();
-        System.out.println("What is the priority of the task(0-5)? ");
-        int taskPriority = input2.nextInt();
+        int taskPriority = -1;
+        while(taskPriority != 1 && taskPriority != 2 && taskPriority != 3 && taskPriority != 4 && taskPriority != 0 && taskPriority != 5) {
+            System.out.println("What is the priority of the task(0-5)? ");
+            taskPriority = input2.nextInt();
+        }
         return new Task(taskText, taskDescription, taskPriority);
     }
 
