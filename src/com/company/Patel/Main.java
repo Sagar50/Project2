@@ -48,14 +48,12 @@ public class Main {
                     }
                 }
             } else if (response == 4) {
-                int x = tasks.size();
                 for (Task task : tasks) {
                     System.out.println(task);
                 }
             } else if (response == 5) {
                 System.out.println("What is the priority of the task?");
                 int priority = input.nextInt();
-                int x = tasks.size();
                 for (Task task : tasks) {
                     if (priority == task.getPriority()) {
                         System.out.println(task);
